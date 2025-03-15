@@ -18,6 +18,12 @@ class _HomeScreenState extends State<HomeScreen> {
 
   void onClick(String menu) async {
     switch (menu.toLowerCase()) {
+      case "home":
+        Navigator.pushNamed(
+          context, 
+          AppRoutes.tab,
+        );
+        break;
       case "profile":
         final result = await context.push<String>(ProfileScreen(
           name: name,

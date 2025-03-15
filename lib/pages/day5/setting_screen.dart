@@ -27,7 +27,7 @@ class _SettingScreenState extends State<SettingScreen> {
   @override
   void didChangeDependencies() {
     final args = ModalRoute.of(context)?.settings.arguments;
-    name = args as String;
+    name = (args as String?) ?? '';
     super.didChangeDependencies();
   }
 

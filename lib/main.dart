@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_batch_5/pages/day4/gridview_builder_screen.dart';
+import 'package:flutter_batch_5/utils/routes.dart';
 
 void main() {
   runApp(const MyApp());
@@ -27,7 +27,8 @@ class MyApp extends StatelessWidget {
           foregroundColor: Colors.white
         )
       ),
-      home: GridViewBuilderScreen(),
+      routes: routes,
+      initialRoute: AppRoutes.home,
     );
   }
 }
